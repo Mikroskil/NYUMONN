@@ -1,3 +1,8 @@
 node_modules
 bower_components
+<<<<<<< HEAD
 
+=======
+dist
+bespoke-theme-*
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c

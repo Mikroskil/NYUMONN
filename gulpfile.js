@@ -1,7 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 'use strict';
 
+=======
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
 =======
 >>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
 =======
@@ -12,6 +15,10 @@ var pkg = require('./package.json'),
   plumber = require('gulp-plumber'),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  rimraf = require('gulp-rimraf'),
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
 =======
   rimraf = require('gulp-rimraf'),
 >>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
@@ -28,7 +35,10 @@ var pkg = require('./package.json'),
   csso = require('gulp-csso'),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   del = require('del'),
+=======
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
 =======
 >>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
 =======
@@ -81,6 +91,7 @@ gulp.task('images', ['clean:images'], function() {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 gulp.task('clean', function(done) {
   del('dist', done);
 });
@@ -103,6 +114,8 @@ gulp.task('clean:images', function(done) {
 
 gulp.task('connect', ['build'], function() {
 =======
+=======
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
 =======
 >>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
 gulp.task('clean', function() {
@@ -132,6 +145,9 @@ gulp.task('clean:images', function() {
 
 gulp.task('connect', ['build'], function(done) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
+=======
 >>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
 =======
 >>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
@@ -141,9 +157,13 @@ gulp.task('connect', ['build'], function(done) {
   });
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 });
 
 gulp.task('open', ['connect'], function (done) {
+=======
+
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
 =======
 
 >>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
@@ -170,9 +190,13 @@ gulp.task('deploy', ['build'], function(done) {
 gulp.task('build', ['js', 'html', 'css', 'images']);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 gulp.task('serve', ['open', 'watch']);
 
+=======
+gulp.task('serve', ['connect', 'watch']);
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
 =======
 gulp.task('serve', ['connect', 'watch']);
 >>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
