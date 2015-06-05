@@ -1,5 +1,21 @@
 {
+<<<<<<< HEAD
   "name": "presentation-hello-world",
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  "name": "presentation-hello-world",
+=======
+  "name": "presentation-y",
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
+=======
+  "name": "presentation-y",
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
+=======
+  "name": "presentation-y",
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
+>>>>>>> 1e4598260157464fddf387ec985c5fccfc96819a
   "version": "0.0.0",
   "dependencies": {},
   "devDependencies": {
@@ -14,7 +30,20 @@
     "bespoke-theme-cube": "^2.0.0",
     "bespoke-touch": "^1.0.0",
     "debowerify": "^0.7.1",
+<<<<<<< HEAD
     "del": "^1.1.1",
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    "del": "^1.1.1",
+=======
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
+=======
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
+=======
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
+>>>>>>> 1e4598260157464fddf387ec985c5fccfc96819a
     "gh-pages": "^0.2.0",
     "gulp": "^3.8.1",
     "gulp-autoprefixer": "0.0.7",
@@ -24,6 +53,21 @@
     "gulp-jade": "^0.6.0",
     "gulp-plumber": "^0.6.3",
     "gulp-rename": "^1.2.0",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    "gulp-rimraf": "^0.1.0",
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
+=======
+    "gulp-rimraf": "^0.1.0",
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
+=======
+    "gulp-rimraf": "^0.1.0",
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
+>>>>>>> 1e4598260157464fddf387ec985c5fccfc96819a
     "gulp-stylus": "^1.0.2",
     "gulp-uglify": "^0.3.1",
     "gulp-util": "^2.2.17",

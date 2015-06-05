@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Hello World
 > A [Bespoke.js](http://markdalgleish.com/projects/bespoke.js) presentation, built with [generator-bespoke](https://github.com/markdalgleish/generator-bespoke)
 
@@ -27,3 +28,6 @@ uyryudfhfdhgdgdgfdgfdgfd
 =======
 # BESPOKE2
 >>>>>>> 5fdafa4998874066858ff45eb377d0132e738fbb
+=======
+afjfje
+>>>>>>> 1e4598260157464fddf387ec985c5fccfc96819a

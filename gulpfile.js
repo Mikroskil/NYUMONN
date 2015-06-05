@@ -1,9 +1,38 @@
+<<<<<<< HEAD
 'use strict';
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+'use strict';
+
+=======
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
+=======
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
+=======
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
+>>>>>>> 1e4598260157464fddf387ec985c5fccfc96819a
 var pkg = require('./package.json'),
   gulp = require('gulp'),
   gutil = require('gulp-util'),
   plumber = require('gulp-plumber'),
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  rimraf = require('gulp-rimraf'),
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
+=======
+  rimraf = require('gulp-rimraf'),
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
+=======
+  rimraf = require('gulp-rimraf'),
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
+>>>>>>> 1e4598260157464fddf387ec985c5fccfc96819a
   rename = require('gulp-rename'),
   connect = require('gulp-connect'),
   browserify = require('gulp-browserify'),
@@ -12,7 +41,20 @@ var pkg = require('./package.json'),
   stylus = require('gulp-stylus'),
   autoprefixer = require('gulp-autoprefixer'),
   csso = require('gulp-csso'),
+<<<<<<< HEAD
   del = require('del'),
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  del = require('del'),
+=======
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
+=======
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
+=======
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
+>>>>>>> 1e4598260157464fddf387ec985c5fccfc96819a
   through = require('through'),
   opn = require('opn'),
   ghpages = require('gh-pages'),
@@ -59,6 +101,12 @@ gulp.task('images', ['clean:images'], function() {
     .pipe(connect.reload());
 });
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 1e4598260157464fddf387ec985c5fccfc96819a
 gulp.task('clean', function(done) {
   del('dist', done);
 });
@@ -80,13 +128,72 @@ gulp.task('clean:images', function(done) {
 });
 
 gulp.task('connect', ['build'], function() {
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
+=======
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
+gulp.task('clean', function() {
+  return gulp.src('dist')
+    .pipe(rimraf());
+});
+
+gulp.task('clean:html', function() {
+  return gulp.src('dist/index.html')
+    .pipe(rimraf());
+});
+
+gulp.task('clean:js', function() {
+  return gulp.src('dist/build/build.js')
+    .pipe(rimraf());
+});
+
+gulp.task('clean:css', function() {
+  return gulp.src('dist/build/build.css')
+    .pipe(rimraf());
+});
+
+gulp.task('clean:images', function() {
+  return gulp.src('dist/images')
+    .pipe(rimraf());
+});
+
+gulp.task('connect', ['build'], function(done) {
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
+=======
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
+=======
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
+>>>>>>> 1e4598260157464fddf387ec985c5fccfc96819a
   connect.server({
     root: 'dist',
     livereload: true
   });
+<<<<<<< HEAD
 });
 
 gulp.task('open', ['connect'], function (done) {
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+});
+
+gulp.task('open', ['connect'], function (done) {
+=======
+
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
+=======
+
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
+=======
+
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
+>>>>>>> 1e4598260157464fddf387ec985c5fccfc96819a
   opn('http://localhost:8080', done);
 });
 
@@ -105,7 +212,25 @@ gulp.task('deploy', ['build'], function(done) {
 });
 
 gulp.task('build', ['js', 'html', 'css', 'images']);
+<<<<<<< HEAD
 
 gulp.task('serve', ['open', 'watch']);
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+gulp.task('serve', ['open', 'watch']);
+
+=======
+gulp.task('serve', ['connect', 'watch']);
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
+=======
+gulp.task('serve', ['connect', 'watch']);
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
+=======
+gulp.task('serve', ['connect', 'watch']);
+>>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
+>>>>>>> 1e4598260157464fddf387ec985c5fccfc96819a
 gulp.task('default', ['build']);
