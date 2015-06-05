@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html></html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <meta name="viewport" content="width=device-width">
+  <title>Bespoke.js</title>
+  <meta content="Bespoke.js" property="og:title">
+  <meta content="Bespoke.js" property="og:site_name">
+  <meta content="http://markdalgleish.com/projects/bespoke.js/" property="og:url">
+  <meta content="website" property="og:type">
+  <link rel="stylesheet" type="text/css" href="./Bespoke.js_files/style.css">
+  <link rel="stylesheet" type="text/css" href="./Bespoke.js_files/themes.css">
+  <link href="./Bespoke.js_files/css" rel="stylesheet" type="text/css">
+</head>
+<body class="cube">
+  <div id="main">
+    <header>
+      <p class="hidden"><span id="input-method">Tekan arah panah atas dan bawah </span>untuk mengganti mode tampilan. </p>
+    </header>
+    <div id="title"><a href="katakana.html"><span>Hiragana</span><span class="shh">Katakana</span></a></div>
+    <p id="second">
+      <ul>
+        <li>a-column </li>
+        <li>i-column </li>
+        <li>u-column </li>
+        <li>e-column </li>
+        <li>o-column<span id="dummy"></span>
+          <article class="bespoke">
+            <section id="mix"><a href="#" onclick="playSound('./sound/ga.mp3');">が </a><a href="#" onclick="playSound('./sound/gi.mp3');">ぎ </a><a href="#" onclick="playSound('./sound/gu.mp3');">ぐ </a><a href="#" onclick="playSound('./sound/ge.mp3');">げ </a><a href="#" onclick="playSound('./sound/go.mp3');">ご  </a>
+              <h5>ga gi gu ge go</h5>
+            </section>
+            <section id="mix"><a href="#" onclick="playSound('./sound/za.mp3');">ざ </a><a href="#" onclick="playSound('./sound/ji.mp3');">じ </a><a href="#" onclick="playSound('./sound/zu.mp3');">ず </a><a href="#" onclick="playSound('./sound/ze.mp3');">ぜ </a><a href="#" onclick="playSound('./sound/zo.mp3');">ぞ  </a>
+              <h5>za ji zu ze zo</h5>
+            </section>
+            <section id="mix"><a href="#" onclick="playSound('./sound/da.mp3');">だ </a><a href="#" onclick="playSound('./sound/ji2.mp3');">じ </a><a href="#" onclick="playSound('./sound/zu2.mp3');">ず </a><a href="#" onclick="playSound('./sound/de.mp3');">で </a><a href="#" onclick="playSound('./sound/do.mp3');">ど  </a>
+              <h5>da ji zu de do</h5>
+            </section>
+            <section id="mix"><a href="#" onclick="playSound('./sound/ba.mp3');">ば </a><a href="#" onclick="playSound('./sound/bi.mp3');">び </a><a href="#" onclick="playSound('./sound/bu.mp3');">ぶ </a><a href="#" onclick="playSound('./sound/be.mp3');">べ </a><a href="#" onclick="playSound('./sound/bo.mp3');">ぼ  </a>
+              <h5>ba bi bu be bo</h5>
+            </section>
+          </article>
+        </li>
+      </ul>
+    </p>
+    <ol id="btn">
+      <li>MENU
+        <ol>
+          <li><a href="index.html">
+              <h3>Gojoun</h3></a></li>
+          <li><a href="dakuonhiragana.html">
+              <h3>Dakuon</h3></a></li>
+          <li><a href="handakuonhiragana.html">
+              <h3>Han-Dakuon</h3></a></li>
+          <li><a href="yoonhiragana.html">
+              <h3>Yoon</h3></a></li>
+          <li><a href="examples.html">
+              <h3>Examples</h3></a></li>
+        </ol>
+      </li>
+      <h4>Dakuon</h4>
+    </ol>
+  </div>
+  <footer>
+    <div class="themes">
+      <p><strong>MODE VIEW<span class="colon">:</span></strong><span id="theme">Cube</span></p>
+      <div id="up-arrow" class="up arrow">^</div>
+      <div id="down-arrow" class="down arrow">^</div>
+    </div>
+  </footer>
+  <script src="./Bespoke.js_files/bespoke.min.js"></script>
+  <script src="./Bespoke.js_files/demo.js"></script>
+  <script src="./Bespoke.js_files/sound.js"></script>
+</body>

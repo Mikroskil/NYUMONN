@@ -1,5 +1,8 @@
 {
 <<<<<<< HEAD
+  "name": "presentation-hello-world",
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   "name": "presentation-hello-world",
@@ -12,6 +15,7 @@
 =======
   "name": "presentation-y",
 >>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
+>>>>>>> 1e4598260157464fddf387ec985c5fccfc96819a
   "version": "0.0.0",
   "dependencies": {
     "prism": "gh-pages"
