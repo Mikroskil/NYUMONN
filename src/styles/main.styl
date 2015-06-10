@@ -1,26 +1,184 @@
-// New to Stylus? Check out http://learnboost.github.io/stylus
-// Use modern CSS thanks to Autoprefixer: https://github.com/ai/autoprefixer
+*
+  -webkit-box-sizing border-box
+  -moz-box-sizing border-box
+  box-sizing border-box
+  margin 0
+  padding 0
 
-// Import CSS from "node_modules" and "bower_components"
-// thanks to Stylus' "import css" and "paths" options
+.bespoke-slide
+  -webkit-transition all 1s ease
+  -moz-transition all 1s ease
+  -o-transition all 1s ease
+  -ms-transition all 1s ease
+  transition all 1s ease
+  -webkit-transform-origin 100% 0%
+  -moz-transform-origin 100% 0%
+  -o-transform-origin 100% 0%
+  -ms-transform-origin 100% 0%
+  transform-origin 100% 0%
+  -webkit-backface-visibility hidden
+  -moz-backface-visibility hidden
+  -ms-backface-visibility hidden
+  backface-visibility hidden
+  display -webkit-box
+  display -moz-box
+  display -ms-box
+  display -webkit-flex
+  display box
+  display flex
+  -webkit-box-orient vertical
+  -moz-box-orient vertical
+  -o-box-orient vertical
+  -ms-box-orient vertical
+  -webkit-flex-direction column
+  flex-direction column
+  -webkit-box-pack center
+  -moz-box-pack center
+  -o-box-pack center
+  -ms-box-pack center
+  -webkit-justify-content center
+  justify-content center
+  -webkit-box-align center
+  -moz-box-align center
+  -o-box-align center
+  -ms-box-align center
+  -webkit-align-items center
+  align-items center
+  text-align center
+  max-width 800px
+  max-height 600px
+  position absolute
+  margin auto
+  top 10%
+  left 10%
+  bottom 10%
+  right 10%
+  padding 40px
+  -webkit-border-radius 0
+  border-radius 0
+  color #4698CC
+  font-family junction, open sans,helvetica,arial,sans-serif
 
-@import 'prism/themes/prism-okaidia.css'
-// Check out "bower_components/prism/themes/" for available themes
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+.bespoke-before
+  opacity 1
+  -ms-filter none
+  filter none
+
+.bespoke-inactive
+  opacity 0
+  pointer-events none
+  
+.bespoke-active
+  opacity 1
+  -ms-filter none
+  filter none
+  
+.bespoke-bullet-active
+  opacity 1
+  -ms-filter none
+  filter none
+
+@page
+  width landscape
+  height landscape
+
+article
+  -webkit-transition background 1s ease
+  -moz-transition background 1s ease
+  -o-transition background 1s ease
+  -ms-transition background 1s ease
+  transition background 1s ease
+  display none
+  &.bespoke-parent
+    display block
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    right 0
+    overflow hidden
+    -webkit-perspective 600px
+    -moz-perspective 600px
+    -ms-perspective 600px
+    perspective 600px
+
+
+.bespoke-before
+  -webkit-transform translateX(-1200px) translateY(800px) rotate(-50deg)
+  -moz-transform translateX(-1200px) translateY(800px) rotate(-50deg)
+  -o-transform translateX(-1200px) translateY(800px) rotate(-50deg)
+  -ms-transform translateX(-1200px) translateY(800px) rotate(-50deg)
+  transform translateX(-1200px) translateY(800px) rotate(-50deg)
+
+.bespoke-bullet
+  -webkit-transition all 0.3s ease
+  -moz-transition all 0.3s ease
+  -o-transition all 0.3s ease
+  -ms-transition all 0.3s ease
+  transition all 0.3s ease
 
 body
-    background red
-=======
->>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
-=======
->>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
-=======
->>>>>>> 6f69659a85c08a0430dfd3982d61ed7cefafc73c
->>>>>>> 1e4598260157464fddf387ec985c5fccfc96819a
->>>>>>> 49378c6ca33c3d1f30c061c5bdb3aa7b7a092f82
+  background radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 9%, hsla(0, 100%, 20%, 0) 9%) 0 0,
+  radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 8%, hsla(0, 100%, 20%, 0) 10%) 50px 50px,
+  radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 50px 0,
+  radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 0 50px,
+  radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 50px 0,
+  radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 100px 50px,
+  radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 0 0,
+  radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 50px 50px,
+  linear-gradient(45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0,
+  linear-gradient(-45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0
+  background-color #300
+  background-size 100px 100px
+    
+
+li
+  margin-bottom 12px
+  list-style none
+  &.bespoke-bullet-inactive
+    -webkit-transform translateX(16px)
+    -moz-transform translateX(16px)
+    -o-transform translateX(16px)
+    -ms-transform translateX(16px)
+    transform translateX(16px)
+
+code
+  padding 26px !important
+
+body
+  font-family junction,open sans,helvetica,arial,sans-serif
+  font-size 18px
+  color #468294
+  background-color #F2f2f2
+
+h1
+  font-size 72px
+  line-height 82px
+  letter-spacing -2px
+  margin-bottom 16px
+
+h2
+  font-size 42px
+  letter-spacing -1px
+  margin-bottom 10px
+
+h3
+  font-family 'junction-bold', sans-serif
+  font-size 30px
+  font-weight normal
+  margin-bottom 24px
+  color #000
+  text-align justify
+
+hr
+  visibility hidden
+  height 20px
+
+p
+  margin 0 100px 12px
+  line-height 22px
+
+a
+  color #0093cc
+  text-decoration none
+
